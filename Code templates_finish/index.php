@@ -6,6 +6,9 @@ Sau đó, #main-content là khung hiển thị nội dung và #sidebar là khung
  -->
 	<div id="main-content">
 		<?php if ( have_posts() ) : while( have_posts() ) : the_post(); ?>
+
+
+
 			<!-- 
 			@ get_template_part( 'content', get_post_format() ) nghĩa là nó sẽ load file content-$format.php trong thư mục theme. 
 			Cái $format nghĩa là cái tên định danh của từng loại Post Format như video, audio, image,…
